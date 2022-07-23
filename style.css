@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+body{
+    background-color: darkslategray;
+}
+
+.container{
+    background-color: whitesmoke;
+    width: 500px;
+    margin: 50px auto;
+    border: 3px solid rgb(10, 190, 245);
+    border-radius: 5px;
+    padding: 30px;
+}
+.container a{
+    text-decoration: underline;
+}

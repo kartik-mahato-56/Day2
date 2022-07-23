@@ -1,0 +1,4 @@
+-- CREATE table users(id int PRIMARY KEY AUTO_INCREMENT, name varchar(100), email varchar(100), phone bigint);
+-- CREATE TABLE user_details(id int PRIMARY key AUTO_INCREMENT, uid int, address varchar(250), type varchar(100));
+-- ALTER TABLE users AUTO_INCREMENT = 1001;
+-- ALTER TABLE user_details AUTO_INCREMENT = 1;
