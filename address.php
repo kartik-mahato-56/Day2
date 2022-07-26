@@ -7,7 +7,7 @@
       $addressType = $_REQUEST["addressType"];
 
 
-    $query = "insert into user_details(uid, address,type) values($uid, '$address', '$addressType')";
+    $query = "INSERT INTO user_details(uid, address,type) VALUES($uid, '$address', '$addressType')";
     $resultSet = mysqli_query($db, $query);
     if(!$resultSet){
       echo "<script>alert('Something Wrong, Try again!')</script>";
@@ -40,15 +40,16 @@
           <label for="">Select User</label>
           <select class="form-control" name="username" id="">
             <option value="">------</option>
+            <!-- here we are accessing the id and name from the database for drop down  -->
             <?php 
 
-              $rs = mysqli_query($db, "select uid from users");
+              $rs = mysqli_query($db, "SELECT uid,name FROM users");
               
               while($ids = mysqli_fetch_assoc($rs)){
 
-              $rs2 = mysqli_query($db,"select name from users where uid = $ids[uid]");
-              $data = mysqli_fetch_assoc($rs2);
-              echo "<option value='$ids[uid]'>$data[name]</option>";
+              
+              
+              echo "<option value='$ids[uid]'>$ids[id]--$ids[name]</option>";
               }
             ?>    
           </select>
@@ -71,6 +72,7 @@
         </div>
         <br>
         Go Back to <a href="index.php">Registration Page</a>
+        
       </div>
     </form>
   </body>
