@@ -1,20 +1,63 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-}
-body{
-    background-color: darkslategray;
-}
+    *{
+        margin: 0;
+        padding: 0;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    }
+    body{
+        background-color: darkslategray;
+    }
 
-.container{
-    background-color: whitesmoke;
-    width: 500px;
-    margin: 50px auto;
-    border: 3px solid rgb(10, 190, 245);
-    border-radius: 5px;
-    padding: 30px;
-}
-.container a{
-    text-decoration: underline;
-}
+    .container{
+        background-color: whitesmoke;
+        width: 500px;
+        margin: 50px auto;
+        border: 3px solid rgb(10, 190, 245);
+        border-radius: 5px;
+        /* padding: 30px; */
+    }
+    .container a{
+        text-decoration: underline;
+    }
+
+    .btn-primary{
+        
+    }
+    .search{
+        height: 300px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid brown;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: wheat;
+        border-radius: 10px;
+        
+
+    }
+    .search a{
+        text-align: left;
+        align-items: center;
+    }
+
+    #head{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .table-search{
+        background-color: white;
+        border: 2px solid red;
+        padding: 20px;
+        width: 750px;
+        margin: 10px auto;
+        /*   */
+        
+    }
+    .table-search table tr td{
+        padding: 20px;
+    }
+   

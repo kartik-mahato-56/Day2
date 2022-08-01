@@ -49,7 +49,7 @@
 
               
               
-              echo "<option value='$ids[uid]'>$ids[id]--$ids[name]</option>";
+              echo "<option value='$ids[uid]'>$ids[uid]--$ids[name]</option>";
               }
             ?>    
           </select>
@@ -69,10 +69,11 @@
         </div>
         <div class="text-center">
           <button type="submit" class="btn btn-primary" name="submitAddress">Submit Address</button>
+          <a class="btn btn-primary" href="searchaddress.php" role="button">Search Address</a>
+
         </div>
         <br>
-        Go Back to <a href="index.php">Registration Page</a>
-        
+              Go back to <a href="index.php">Registration Page</a>
       </div>
     </form>
   </body>
